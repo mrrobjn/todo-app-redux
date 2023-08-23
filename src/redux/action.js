@@ -6,7 +6,13 @@ export const addTodo = (data) => {
 }
 export const searchTodo = (data) => {
     return {
-        type: "search",
+        type: "searchFilter",
+        payload: data
+    }
+}
+export const statusTodo = (data)=>{
+    return{
+        type: "statusFilter",
         payload: data
     }
 }
