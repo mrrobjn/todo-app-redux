@@ -10,6 +10,12 @@ export const searchTodo = (data) => {
         payload: data
     }
 }
+export const checkTodo = (id)=>{
+    return{
+        type: "checkTodo",
+        payload: id
+    }
+}
 export const statusTodo = (data)=>{
     return{
         type: "statusFilter",
